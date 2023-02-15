@@ -2,9 +2,9 @@ package com.mycompany.agency;
 
 
 
-    // TODO 1: Make Intern a child of StaffEmploee
+    // TODO 1: Make Intern a child of StaffMember
 
-public class Intern extends StaffEmployee
+public class Intern extends StaffMember
 {
     //-----------------------------------------------------------------
     //  TODO 2: Constructor: Sets up this intern using the specified
@@ -12,9 +12,8 @@ public class Intern extends StaffEmployee
     //-----------------------------------------------------------------
     public Intern(String eName, String eAddress, String ePhone)
     {
-        super.name = eName;
-        super.address = eName;
-        super.phone = ePhone;
+        super(eName,eAddress,ePhone);
+        
     }
 
     //-----------------------------------------------------------------
