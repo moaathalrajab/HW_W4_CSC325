@@ -17,7 +17,8 @@ public class Staff
         // TODO 1: Add 6 emploees to the staffList
 
         ((Executive)staffList[0]).awardBonus(500.00);
-
+        ((Intern)staffList[1]).pay(0);
+        ((StaffEmployee)[2]).payRate(7.25);
         ((TempEmploee)staffList[3]).addHours(40);
     }
 
