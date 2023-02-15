@@ -28,7 +28,7 @@ public class StaffEmployee extends StaffMember
     @Override    
     public String toString()
     {
-        return "StaffEmployee{" + "socialSecurityNumber=" + socialSecurityNumber + ", payRate=" + payRate + '}';
+        return String.format("Name: %s Address: %s Phone: %s Social Security Number: %s Pay Rate: %f", super.name, super.address, super.phone, socialSecurityNumber, payRate);
        
     }
 
