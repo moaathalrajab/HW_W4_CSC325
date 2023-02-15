@@ -32,6 +32,7 @@ public class TempEmploee extends StaffEmployee
     //-----------------------------------------------------------------
     // TODO3: Computes and returns the pay for this hourly employee. --DONE
     //-----------------------------------------------------------------
+    @Override
     public double pay()
     {
         //Calculate the amount this employee is owed.
@@ -49,7 +50,7 @@ public class TempEmploee extends StaffEmployee
 
     @Override
     public String toString() {
-        return "TempEmploee{" + "hoursWorked=" + hoursWorked + '}';
+        return super.toString() + " " +String.format("Hours Worked: %d", hoursWorked);
     }
     
 }
