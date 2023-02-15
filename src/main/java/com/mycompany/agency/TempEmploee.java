@@ -34,7 +34,12 @@ public class TempEmploee extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-        return hoursWorked * payRate;
+        //Calculate the amount this employee is owed.
+        double pay = hoursWorked * payRate;
+        //Reset hoursWorked so that they aren't paid for the same hours a second time.
+        hoursWorked = 0;
+        
+        return pay;
 
     }
 
