@@ -20,6 +20,7 @@ public class Intern
     //-----------------------------------------------------------------
     public double pay()
     {
-      
+      Double  pay =0.0;
+      return pay;   
     }
 }
