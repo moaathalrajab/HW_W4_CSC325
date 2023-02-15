@@ -1,7 +1,5 @@
 package com.mycompany.agency;
 
-
-
     // TODO 1: Make TempEmploee a child of StaffEmploee --DONE
 
 public class TempEmploee extends StaffEmployee
@@ -50,7 +48,7 @@ public class TempEmploee extends StaffEmployee
 
     @Override
     public String toString() {
-        return super.toString() + " " +String.format("Hours Worked: %d", hoursWorked);
+        return String.format("Name: %s Address: %s Phone: %s Social Security Number: %s Pay Rate: %f Hours Worked: %d", super.name, super.address, super.phone, socialSecurityNumber, payRate, hoursWorked);
     }
     
 }
