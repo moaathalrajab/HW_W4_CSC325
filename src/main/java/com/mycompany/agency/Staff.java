@@ -17,7 +17,6 @@ public class Staff {
         ((TempEmploee) staffList[3]).addHours(40);
         ((StaffEmployee) staffList[4]).pay();
         ((StaffEmployee) staffList[5]).pay();
-        ((StaffEmployee) staffList[6]).pay();
     }
 
     //-----------------------------------------------------------------
