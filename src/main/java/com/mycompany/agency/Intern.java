@@ -18,6 +18,7 @@ public class Intern
     //-----------------------------------------------------------------
     // TODO 3:  Returns a zero pay value for this intern.
     //-----------------------------------------------------------------
+   //Nick
     public double pay()
     {
       Double  pay =0.0;
