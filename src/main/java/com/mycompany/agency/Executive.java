@@ -32,7 +32,7 @@ public class Executive extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-      double pay = payRate + bonus;
+      double pay = super.payRate + bonus;
       
       return pay;
     }
