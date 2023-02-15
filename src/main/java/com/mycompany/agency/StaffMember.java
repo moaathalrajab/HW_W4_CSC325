@@ -24,7 +24,7 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     public String toString()
     {
-        return String.format("Name: %s Address: %s Phone: %s ", name, address, phone);
+        return String.format("Name: %s Address: %s Phone: %s", name, address, phone);
     }
 
     //-----------------------------------------------------------------
