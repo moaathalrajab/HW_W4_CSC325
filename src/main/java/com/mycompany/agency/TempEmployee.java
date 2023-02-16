@@ -1,8 +1,10 @@
 package com.mycompany.agency;
 
-    // TODO 1: Make TempEmploee a child of StaffEmploee --DONE
 
-public class TempEmploee extends StaffEmployee
+
+    // TODO 1: Make TempEmploee a child of StaffEmploee
+
+public class TempEmployee 
 {
     private int hoursWorked;
 
@@ -10,7 +12,7 @@ public class TempEmploee extends StaffEmployee
     //  Constructor: Sets up this hourly employee using the specified
     //  information.
     //-----------------------------------------------------------------
-    public TempEmploee(String eName, String eAddress, String ePhone,
+    public TempEmployee(String eName, String eAddress, String ePhone,
             String socSecNumber, double rate)
     {
         super(eName, eAddress, ePhone, socSecNumber, rate);
@@ -20,35 +22,26 @@ public class TempEmploee extends StaffEmployee
 
     //-----------------------------------------------------------------
     // TODO2: Adds the specified number of hours to this employee's
-    //  accumulated hours. --DONE
+    //  accumulated hours.
     //-----------------------------------------------------------------
     public void addHours(int moreHours)
     {
-        hoursWorked += moreHours;
+        
     }
 
     //-----------------------------------------------------------------
-    // TODO3: Computes and returns the pay for this hourly employee. --DONE
+    // TODO3: Computes and returns the pay for this hourly employee.
     //-----------------------------------------------------------------
-    @Override
     public double pay()
     {
-        //Calculate the amount this employee is owed.
-        double pay = hoursWorked * payRate;
-        //Reset hoursWorked so that they aren't paid for the same hours a second time.
-        hoursWorked = 0;
-        
-        return pay;
 
     }
 
     //-----------------------------------------------------------------
-    // TODO4: Returns information about this hourly employee as a string. --DONE
+    // TODO4: Returns information about this hourly employee as a string.
     //-----------------------------------------------------------------
+    public String toString()
+    {
 
-    @Override
-    public String toString() {
-        return String.format("Name: %s Address: %s Phone: %s Social Security Number: %s Pay Rate: %f Hours Worked: %d", super.name, super.address, super.phone, socialSecurityNumber, payRate, hoursWorked);
     }
-    
 }
